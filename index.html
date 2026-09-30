@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#05060b" />
+    <title>KERNEL//PANIC</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2305060b'/%3E%3Cpath d='M18 10 L18 50 L28 40 L35 56 L42 53 L35 37 L49 37 Z' fill='%2300f0ff' stroke='%23ff2bd6' stroke-width='3'/%3E%3C/svg%3E" />
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: #020308;
+        overflow: hidden;
+        touch-action: none;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      canvas {
+        display: block;
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        outline: none;
+        cursor: none;
+      }
+      canvas.show-cursor { cursor: default; }
+    </style>
+  </head>
+  <body>
+    <canvas id="game" tabindex="0"></canvas>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
